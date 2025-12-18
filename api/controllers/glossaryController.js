@@ -22,7 +22,7 @@ exports.createTableGlossary = async (req, res) => {
     }
 };
 exports.createGlossary = async (req, res) => {
-    // const { id } = req.params;
+
     const { word, transcription, translation } = req.body;
     try {
         const result = await pool.query('INSERT INTO glossary (word, transcription, translation) VALUES($1,$2,$3) RETURNING *', [word, transcription, translation]);
@@ -33,7 +33,7 @@ exports.createGlossary = async (req, res) => {
 };
 
 exports.clearGlossary = async (req, res) => {
-    // const { id } = req.params;
+
 
     try {
         const result = await pool.query('TRUNCATE TABLE words RESTART IDENTITY ');
@@ -44,7 +44,7 @@ exports.clearGlossary = async (req, res) => {
 };
 
 exports.viewGlossary = async (req, res) => {
-    // const { id } = req.params;
+
 
     try {
         const result = await pool.query('SELECT * FROM words');
