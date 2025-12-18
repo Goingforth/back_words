@@ -1,0 +1,32 @@
+{
+  "name": "back_words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goingforth/back_words.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goingforth/back_words/issues"
+  },
+  "homepage": "https://github.com/Goingforth/back_words#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "node-ssh": "^13.2.1",
+    "pako": "^2.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
